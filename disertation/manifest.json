@@ -1,0 +1,44 @@
+{
+    "name": "EagleEye NG",
+    "short_name": "EagleEye NG",
+    "start_url": ".",
+    "background_color": "#46E14E",
+    "theme_color": "#46E14E",
+    "display": "standalone",
+    "icons":[
+        {
+            "src": "images/logo.png",
+            "sizes": "472x474",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+            
+        },
+        {
+            "src": "images/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+            
+        }
+    ],
+    "screenshots": [
+        {
+         "src": "images/logo512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "form_factor": "wide",
+          "label": "Wonder Widgets"
+        },
+        {
+            "src": "images/logo.png",
+             "sizes": "472x474",
+             "type": "image/png",
+             "form_factor": "narrow",
+             "label": "Wonder Widgets"
+           }
+    ]
+}

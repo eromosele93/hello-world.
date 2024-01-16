@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/style.css">
+   <title>EagleEye</title>
+</head>
+
+<body style="background-color: #F6F6F6;">
+   <div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<div class="weather-container">
+    <h1 id="location"></h1>
+    <div id="weather-info">
+       <p id="temperature"></p>
+       <p id="description"></p>
+    </div>
+    
+ </div>
+
+ <div class="main">
+<div style="text-align: center;">Call Emergenncy
+<a href="call.html"><img style="border-radius:10px" src="images/call1.png" width="100px" height="100px"></a>
+</div>
+
+<div style="text-align: center;">
+ Home Surveillance
+    <a href="http://192.168.0.25"><img  style="border-radius:10px" src="images/camera.png" width="100px" height="100px">  </a>
+</div>
+
+ </div>
+ <div id="map" style="width: 300px; height: 200px; border-radius: 10px; margin-left: 40px;"></div>
+ <div class="live"><button style="color: white; background-color: #46E14E; border-radius: 5px; border: 1px solid #46E14E;" onclick="sendLocation()">View Live Location</button>
+   <p id="locationOutput">Location will be displayed here.</p></div>
+ <marquee style="color: #46E14E;">&copy; 2023 EagleEye NG</marquee>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHfx2CYJYVM00pn_GUTcIDMfGIpWztRWY&callback=initMap" async defer></script>
+   <script src="src/map.js"></script>
+ 
+ <script src="src/script.js"></script>
+ <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+
+<script src="src/live.js"></script>
+    </body>
+    <html>

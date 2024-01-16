@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#46E14E">
+   <link rel="stylesheet" href="src/style.css">
+   <link rel="manifest" href="manifest.json">
+   <link rel="apple-touch-icon" href="images/logo192.png">
+   <title>EagleEye</title>
+</head>
+<body>
+  <div class="splash">
+    <img class="fadeIn" src="images/logo.png" height="667" width="375" style="position: fixed;">
+  </div> 
+
+<div class="auth"  style="text-align: center;">
+  <form style="margin-top: 300px; margin-left: 30px;" action="secure.php" method="post">
+    <label style="color: white;">Enter Passcode</label><br>
+<input style="border: 1px solid #46E14E; border-radius: 5px;" type="text" name="passcode" required> <br><br>
+<input style="border: 1px solid #46E14E; border-radius: 5px; font-weight: bold;" type="submit" value="Authenticate"> 
+</form>
+</div>
+
+  <script src="src/app.js"></script>
+  <script src="src/index.js"></script>
+</body>
+</html>

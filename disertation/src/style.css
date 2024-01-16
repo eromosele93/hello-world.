@@ -1,0 +1,122 @@
+
+ 
+   body {
+       width: 375px;
+       height: 667x;
+       
+    }
+ 
+ .splash{
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   height:100vh;
+   z-index: 200;
+   align-content: center;
+ }
+ .splash.display-none{
+   position: fixed;
+   opacity: 0;
+   top:0;
+   left: 0;
+   width: 100%;
+   height:100vh;
+   z-index: -10;
+
+ }
+ @keyframes fadeIn{
+to{
+   opacity: 1;
+}
+ }
+
+ .fade-in{
+   opacity: 0;
+   animation: fadeIn 1s ease-in forwards;
+ }
+ .auth{
+  position: fixed;
+  top: 0;
+  left:0;
+
+  width: 375px;
+  height: 667px;
+  background: #46E14E;
+ }
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #46E14E;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.weather-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-left: 60px;
+  border: 1px solid #46E14E;
+}
+
+#location {
+  margin: 0;
+  
+}
+
+#temperature {
+  font-size: 2em;
+  margin: 0px 0;
+}
+
+#description {
+  margin: 0;
+}
+.main{
+  background-color:#F5F5F5; 
+  display: flex;
+width: 250px;  
+  flex-direction: row;
+  justify-content: space-between;
+margin-left: 30px;
+margin-top: 20px;
+}
+.main > div{
+  padding: 10px;
+  margin: 20px;
+  justify-content: space-between;
+  border: 1px solid #46E14E;
+  border-radius: 10px;
+}
+.phone{
+  width: 250px;
+  border: 1px solid #46E14E;
+  padding: 10px;
+  margin-top: 140px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.live{
+  margin-top: 20px;
+  margin-left: 0px;
+  text-align: center;
+}
